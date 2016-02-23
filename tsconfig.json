@@ -1,0 +1,22 @@
+//this is the SERVER file for ts-node (custom tsconfig.json file cannot be set)
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "noEmit": false,
+    "outDir": "./output/build/tsconfig.json/",
+    "listFiles": true,
+    "experimentalDecorators": true,
+    "removeComments": true
+  },
+  "exclude": [
+    "node_modules",
+    "output",
+    "typings/browser.d.ts",
+    "typings/browser"
+  ],
+  "compileOnSave": true
+}

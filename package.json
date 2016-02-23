@@ -1,0 +1,42 @@
+{
+  "name": "example-react-router-universal-lazyroutes-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "6.3.x",
+    "babel-preset-es2015-webpack": "^6.3.14",
+    "babel-preset-react": "6.3.x",
+    "es6-promise": "^3.1.2",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.4",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.0",
+    "ts-loader": "^0.8.0",
+    "ts-node": "^0.5.5",
+    "typescript": "^1.8.0",
+    "webpack": "^2.0.7-beta",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.7.1"
+  },
+  "scripts": {
+    "tsc_default": "./node_modules/.bin/tsc --project ./tsconfig.json",
+    "tsc_client": "./node_modules/.bin/tsc --project ./tsconfig-client.json",
+    "start": "node modules/server-boot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djeeg/example-react-router-universal-lazyroutes-typescript.git"
+  },
+  "author": "djeeg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djeeg/example-react-router-universal-lazyroutes-typescript/issues"
+  },
+  "homepage": "https://github.com/djeeg/example-react-router-universal-lazyroutes-typescript#readme"
+}

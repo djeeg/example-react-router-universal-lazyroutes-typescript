@@ -1,0 +1,27 @@
+{
+  "ambientDependencies": {
+    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#dd638012d63e069f2c99d06ef4dcc9616a943ee4",
+    "history": "github:DefinitelyTyped/DefinitelyTyped/react-router/history.d.ts#46719185c564694c5583c4b7ad94dbb786ecad46",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#7b7aa2027a8fb6219a8bcf1b6bb12bcd0ff9539d",
+    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts#cb5206a8ac1c9a3ddfd126f5ecea6729b2361452",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#20e1eb9616922d382d918cc5a21870a9dbe255f5",
+    "react": "github:xogeny/DefinitelyTyped/react/react.d.ts#69154f67eeca204d18c7525100d350bba4f21ab1",
+    "react-addons-create-fragment": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-create-fragment.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-css-transition-group": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-css-transition-group.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-linked-state-mixin": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-linked-state-mixin.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-perf": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-perf.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-pure-render-mixin": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-pure-render-mixin.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-test-utils": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-test-utils.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-transition-group": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-transition-group.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-addons-update": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-update.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "react-global": "github:DefinitelyTyped/DefinitelyTyped/react/react-global.d.ts#0bc09e91dd6f2d34b14af4367a138d34f437a5d4",
+    "redux-devtools-dock-monitor": "github:DefinitelyTyped/DefinitelyTyped/redux-devtools-dock-monitor/redux-devtools-dock-monitor.d.ts#a507ed9ef2955734b3cf362a0a74b21c7241cebc",
+    "redux-devtools-log-monitor": "github:DefinitelyTyped/DefinitelyTyped/redux-devtools-log-monitor/redux-devtools-log-monitor.d.ts#a507ed9ef2955734b3cf362a0a74b21c7241cebc",
+    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts#0fa4e9e61385646ea6a4cba2aef357353d2ce77f"
+  },
+  "dependencies": {
+    "es6-promise": "github:typed-typings/npm-es6-promise#fb04188767acfec1defd054fc8024fafa5cd4de7",
+    "webpack": "github:tkqubo/typed-webpack#10d2cc44a01602b87f8e999eec90192e7e6b3edc"
+  }
+}

@@ -1,0 +1,4 @@
+{
+}
+
+// DON'T define babel config here because it is different on client/server

@@ -1,0 +1,22 @@
+//this is the CLIENT file for babel
+{
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "noEmit": false,
+    "outDir": "./output/build/tsconfig-client.json/",
+    "pretty": true,
+    "listFiles": true,
+    "experimentalDecorators": true,
+    "removeComments": true
+  },
+  "exclude": [
+    "node_modules",
+    "output",
+    "typings/main.d.ts",
+    "typings/main"
+  ],
+  "compileOnSave": true
+}
