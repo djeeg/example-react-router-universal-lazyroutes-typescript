@@ -1,20 +1,18 @@
-example-react-router-universal-lazyroutes-typescript
-
 ## Concepts
 
-Hot Reloading by Webpack
-Isomorphic / Universal / Server Rendering
-Code splitting by Webpack 2's `System.import`
-Lazy Routes by React-Router's getChildRoutes
-Treeshaking by `es2015-webpack` preset
+- Hot Reloading by Webpack
+- Isomorphic / Universal / Server Rendering
+- Code splitting by Webpack 2's `System.import`
+- Lazy Routes by React-Router's getChildRoutes
+- Treeshaking by `es2015-webpack` preset
 
 ## Technology
 
-react 0.14.6
-babel 6.4.0
-react-router 2.0.0
-typescript 1.8.0
-webpack 2.0.7-beta
+- react 0.14.6
+- babel 6.4.0
+- react-router 2.0.0
+- typescript 1.8.0
+- webpack 2.0.7-beta
 
 ## Running
 
@@ -45,14 +43,6 @@ client
 - webpack
   - tree shaking
   - ES5
-
-
-
-1. Webpack 2.0.7-beta uses `System.import` for split points
-2. `System.import` needs to be polyfilled server-side with `require`.
-3. TODO: Client match uses System.import to force loading
-4. We render on the client.
-6. We raise our arms in the air in triumph.
 
 # Thanks
 
