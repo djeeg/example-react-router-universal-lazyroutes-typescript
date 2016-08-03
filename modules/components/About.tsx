@@ -11,6 +11,7 @@ export default class About extends React.Component<any, any> {
           with the web inspector open. You should not get the
           React warning about reusing markup.
         </p>
+          {this.props.children}
       </div>
     )
   }

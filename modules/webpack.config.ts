@@ -8,10 +8,19 @@ const config: Configuration = {
     app: [
       'eventsource-polyfill', // necessary for hot reloading with IE
       'webpack-hot-middleware/client',
+      //'babel-polyfill',
       './modules/client.tsx'
     ],
-    vendor: ['react', 'react-dom', 'react-router', 'es6-promise', 'history',
-      'babel-regenerator-runtime', 'core-js', 'lodash', 'eventsource-polyfill']
+    vendor: [
+      'react',
+      'react-dom',
+      'react-router',
+      'es6-promise',
+      'history',
+      'core-js',
+      'lodash',
+      'eventsource-polyfill'
+    ]
   },
   output: {
     path: path.resolve("./output/dist/"),
@@ -52,8 +61,10 @@ const config: Configuration = {
     }]
   },
   resolve: {
-    alias: {},
-    extensions: ["", ".js", ".jsx", ".ts", ".tsx"]
+    alias: {
+      'react': path.resolve('./node_modules/react'), //force sub node_modules of node_module to use the primary version of react (eg react-context)
+    },
+    extensions: ["", ".json", ".webpack.js", ".web.js", ".js", ".ts", ".tsx", ".css"]
   }
 };
 

@@ -1,6 +1,6 @@
-// Compiled using typings@0.6.8
-// Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/46719185c564694c5583c4b7ad94dbb786ecad46/react-router/react-router.d.ts
-// Type definitions for react-router v1.0.0
+// Compiled using typings@0.6.2
+// Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/07feae11780495b90145451d48d4a50923762ef1/react-router/react-router.d.ts
+// Type definitions for react-router v2.0.0-rc5
 // Project: https://github.com/rackt/react-router
 // Definitions by: Sergey Buturlakin <http://github.com/sergey-buturlakin>, Yuichi Murata <https://github.com/mrk21>, Václav Ostrožlík <https://github.com/vasek17>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
@@ -46,6 +46,7 @@ declare namespace ReactRouter {
         routeParams?: R
         routes?: PlainRoute[]
         children?: React.ReactElement<any>
+        render?: any //dphack
     }
 
     type RouteComponents = { [key: string]: RouteComponent }
@@ -88,6 +89,7 @@ declare namespace ReactRouter {
         onUpdate?: () => any
         parseQueryString?: ParseQueryString
         stringifyQuery?: StringifyQuery
+        render?: any //dphack
     }
     interface Router extends React.ComponentClass<RouterProps> {}
     interface RouterElement extends React.ReactElement<RouterProps> {}
@@ -111,7 +113,8 @@ declare namespace ReactRouter {
 
 
     interface RouterContextProps extends React.Props<RouterContext> {
-        history: H.History
+        history?: H.History
+        router: Router
         createElement: (component: RouteComponent, props: Object) => any
         location: H.Location
         routes: RouteConfig
@@ -119,7 +122,11 @@ declare namespace ReactRouter {
         components?: RouteComponent[]
     }
     interface RouterContext extends React.ComponentClass<RouterContextProps> {}
-    interface RouterContextElement extends React.ReactElement<RouterContextProps> {}
+    interface RouterContextElement extends React.ReactElement<RouterContextProps> {
+        history?: H.History
+        location: H.Location
+        router?: Router
+    }
     const RouterContext: RouterContext
 
 
@@ -226,7 +233,7 @@ declare namespace ReactRouter {
     interface MatchArgs {
         routes?: RouteConfig
         history?: H.History
-        location?: any
+        location?: any //dphack
         parseQueryString?: ParseQueryString
         stringifyQuery?: StringifyQuery
     }
@@ -316,7 +323,7 @@ declare module "react-router/lib/useRoutes" {
 
 declare module "react-router/lib/PatternUtils" {
 
-	export function formatPattern(pattern: string, params: {}): string;
+    export function formatPattern(pattern: string, params: {}): string;
 
 }
 
@@ -372,11 +379,11 @@ declare module "react-router/lib/PropTypes" {
 }
 
 declare module "react-router/lib/browserHistory" {
-  export default ReactRouter.browserHistory;
+    export default ReactRouter.browserHistory;
 }
 
 declare module "react-router/lib/hashHistory" {
-  export default ReactRouter.hashHistory;
+    export default ReactRouter.hashHistory;
 }
 
 declare module "react-router/lib/match" {
@@ -443,6 +450,10 @@ declare module "react-router" {
     export type RouterState = ReactRouter.RouterState
     export type HistoryBase = ReactRouter.HistoryBase
 
+
+    var applyRouterMiddleware: (obj1: any, obj2?: any, obj3?: any) => any;
+    var withRouter: (obj1: any) => any;
+
     export {
         Router,
         Link,
@@ -461,7 +472,9 @@ declare module "react-router" {
         formatPattern,
         RouterContext,
         PropTypes,
-        match
+        match,
+        applyRouterMiddleware,
+        withRouter
     }
 
     export default Router

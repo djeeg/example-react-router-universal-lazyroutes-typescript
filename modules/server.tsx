@@ -6,7 +6,7 @@ import { renderToString } from 'react-dom/server'
 import { match, RouterContext } from 'react-router'
 import * as fs from 'fs'
 import { createPage, write, writeError, writeNotFound, redirect } from './utils/server-utils'
-import routes from './routes/RootRoute'
+import routes from './routes/Route'
 import { default as webpackconfig } from "./webpack.config";
 import * as webpack from "webpack";
 
